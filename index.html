@@ -197,8 +197,9 @@ function spin() {
 }
 
 function showResult() {
-  // 指针在顶部（-π/2），计算指向哪个奖品
-  const normalized = ((-currentAngle % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+  // 指针在顶部对应 -π/2，需要加上偏移后再计算扇区
+  const offset = Math.PI / 2;
+  const normalized = ((-currentAngle + offset) % (2 * Math.PI) + 2 * Math.PI) % (2 * Math.PI);
   const index = Math.floor(normalized / arc) % total;
   const prize = prizes[index];
 
