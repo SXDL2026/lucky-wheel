@@ -1,0 +1,12 @@
+{
+  "name": "幸运转盘",
+  "short_name": "转盘抽奖",
+  "description": "好玩的幸运转盘抽奖小游戏",
+  "start_url": "/lucky-wheel/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#c0392b",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
